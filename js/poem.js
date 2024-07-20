@@ -64,6 +64,7 @@ function addTextDecoration_Line(line_id,alteration_classname){
     }
 }
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 setTimeout(()=>{
     
@@ -74,12 +75,14 @@ setTimeout(()=>{
         currentLine = firstLine;
         window.scrollTo(0, document.body.scrollHeight);
 
-
     let cursor_image = document.createElement("img");
         cursor_image.classList.add("cursor_image");
         cursor_image.src = "media/cursor.png"
-        currentLine.appendChild(cursor_image);
-        cursor_showing = true;
+
+    if(!isMobile){
+            currentLine.appendChild(cursor_image);
+            cursor_showing = true;
+    }
 
     window.addEventListener("keydown",()=>{
     // setInterval(()=>{

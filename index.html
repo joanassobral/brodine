@@ -28,18 +28,18 @@
     let intro_name = document.getElementById("intro_name");
 
     typeOutText("Woman Sitting at the Machine, Thinking",intro_title)
-
-    setTimeout(()=>{
-        typeOutText("Karen Brodine",intro_name)
-    },700)
+    
 
 
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
         setTimeout(()=>{
             typeOutTextWithP("This website isn't available for mobile users. Try again on another device, pretty please!",intro_name)
-        },1000)
+        },700)
     } else {
+        setTimeout(()=>{
+            typeOutText("Karen Brodine",intro_name)
+        },700)
 
         setTimeout(()=>{
             typeOutTextWithP("The piece that I’m going to read now is something that I wrote over a period of about nine months working in one particular typesetting shop. I want to say a couple things about it before I read it. I wanted to try to get at how I think when I’m working, so that’s a lot of what the piece is about: going in and out of how thoughts go in and out of my mind when my hands and mind are also involved in in work at the machine. Um, there’s one phrase in there where they’re calling me an electronic technician that I want to explain: I am a typesetter, and one particular union that I was trying to get in, um, had typesetters categorized as as people who are doing a certain kind of work and the boss, in order to keep me from getting into the union, simply called me another name. He called me an electronic technician, and um that’s somebody who fixes machines, and I don’t know how to do that.",intro_container)
@@ -54,6 +54,5 @@
         },10000)
     }
 
-    
 </script>
 </html>
