@@ -1,0 +1,72 @@
+.essay_container{
+    margin-top: 5vh; margin-bottom: 5vh;
+    display: flex;
+}
+    #body_container, .footnote_container{
+        padding-left: 5vw;
+    }
+    #body_container{
+        width: 35vw;
+    }s
+
+        h1, .essay_quotation p{
+            -webkit-text-fill-color: rgba(0,0,0,0);
+        }
+
+        p{
+            margin-bottom: 5vh;
+            -webkit-text-fill-color: white;
+            user-select: auto;
+        }
+        p:last-child, .essay_body_prg_last{
+            margin-bottom: 0;
+        }
+
+        .essay_spacer{
+            height: 10vh;
+        }
+
+        .essay_quotation{
+            width: 30vw;
+            margin: auto;
+        }
+
+        .spacing_for_poem{
+            margin-left: 10vw;
+        }
+
+        .essay_footnote{
+            font-size: 1vw;
+            display: inline-block;
+            transform: translate(0,-0.5vw);
+        }
+
+    #footnote_container{
+        position: fixed; left: 50vw;
+    }
+        .footnote_individual_container{
+            display: flex;
+            margin-bottom: 2vh;
+        }
+            .footnote_number{
+                width: 2vw;
+            }
+            .footnote_text{
+                width: 43vw;
+            }
+
+            #footnote_container p{
+                font-size: 1vw;
+                -webkit-text-fill-color: black;
+            }
+
+        
+    
+    
+
+
+
+
+/* .essay_container, .body_container, .footnote_container{
+    border: black 10px solid;
+} */

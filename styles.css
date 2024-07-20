@@ -1,0 +1,79 @@
+*{
+    margin: 0; padding: 0;
+}
+
+html,body{
+    background-color: black;
+}
+
+#video_container{
+    width: 20vw; height: 20vw; 
+    position: fixed; top: 5vh; right: 4vw;
+    overflow: hidden;
+    display: flex; justify-content: center;
+}
+    video{
+        height: 100%; width: 100%; object-fit: cover;
+    }
+
+#text_container{
+    padding-left: 5vw; margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+    #intro_container{
+        margin-bottom: 20vh;
+        width: 50vw;
+    }
+
+        #intro_container p{
+            margin-bottom: 5vh;
+            -webkit-text-fill-color: white;
+        }
+        
+    .text_container_line{
+        display: flex;
+    }
+
+    .text_container_divider{
+        margin-top: 20vh;
+    }
+
+        h1,p{
+            font-size: 1.3vw;
+            -webkit-text-stroke: 4px;
+            -webkit-text-stroke-color: white;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            user-select: none;
+            z-index: 1;
+        }
+        h1,.poem_numeral,.addition,.removed,.link_line{
+            font-weight: normal;
+            font-size: 3vw;
+            -webkit-text-stroke: 10px;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-color: white;
+        }
+            .removed{
+                text-decoration: line-through;
+                text-decoration-thickness: 25px;
+            }
+
+            .link_line{
+                user-select: auto;
+                cursor: pointer;
+            }
+            .link_line:hover{
+                text-decoration: underline;
+            }
+    .cursor_image{
+        height: 1.3vw; margin-left: 5px; margin-top: 5px;
+        opacity: 0;
+        animation: cursoranim 0.75s infinite linear;
+    }
+    @keyframes cursoranim {
+        20% {opacity: 0;}
+        25% {opacity: 1;}
+        75% {opacity: 1;}
+        80% {opacity: 0;}
+    }
