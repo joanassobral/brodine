@@ -13,4 +13,5 @@ function typeOutTextWithP(text_string, parentElement){
     let newP = document.createElement("p");
         parentElement.appendChild(newP)
         typeOutText(text_string,newP);
+
 }
