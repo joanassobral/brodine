@@ -66,7 +66,7 @@ function addTextDecoration_Line(line_id,alteration_classname){
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-setTimeout(()=>{
+function enablePoem(){
     
     let firstLine = document.createElement("div");
         firstLine.classList.add("text_container_line")
@@ -434,4 +434,4 @@ setTimeout(()=>{
             cursor_showing = true;
         }
     })
-},11000)
+}

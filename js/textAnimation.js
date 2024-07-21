@@ -9,9 +9,32 @@ function typeOutText(text_string,text_container){
     }, 3);
 }
 
-function typeOutTextWithP(text_string, parentElement){
+function textIsDone(){
+    console.log("new text")
+}
+
+function typeOutTextIntro(text_string_array, parentElement,j){
+    let currentTextString = text_string_array[j];
+
     let newP = document.createElement("p");
         parentElement.appendChild(newP)
-        typeOutText(text_string,newP);
 
+        setTimeout(()=>{
+            var i = 0;
+            var interval = setInterval(function(){
+                newP.innerHTML += currentTextString.charAt(i);
+                i++;
+                if (i > currentTextString.length){
+                    clearInterval(interval);
+                    j++
+                    if(j<text_string_array.length){
+                        typeOutTextIntro(text_string_array, parentElement,j)
+                    } else {
+                        setTimeout(()=>{
+                            enablePoem()
+                        },1000)
+                    }
+                }
+            }, 3);
+        },1000)
 }
