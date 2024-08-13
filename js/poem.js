@@ -92,9 +92,9 @@ function enablePoem(){
             cursor_showing = false;
         }
 
-        window.scrollTo(0, document.body.scrollHeight);
-
         if(splitPoem.length){
+
+            window.scrollTo(0, document.body.scrollHeight);
 
             newLetter = document.createElement("p");
                 newLetter.innerText = splitPoem.shift();

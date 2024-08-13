@@ -84,9 +84,11 @@ html,body{
     h1{
         font-size: 12vw;
         margin-bottom: 5vh;
+        
     }
     p{
-        font-size: 6vw;
+        font-size: 5vw;
+        position: absolute; top: 80vh;
     }
 
     #intro_container{

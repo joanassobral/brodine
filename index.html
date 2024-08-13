@@ -31,17 +31,17 @@
 
     if (isMobile) {
         setTimeout(()=>{
-            typeOutTextIntro("This website isn't available for mobile users. Try again on another device, pretty please!",intro_name)
-        },700)
+            typeOutText("This website isn't available for mobile users. Try again on another device, pretty please!",intro_name)
+        },2000)
     } else {
         var j=0
         let text_string_array = ["The piece that I’m going to read now is something that I wrote over a period of about nine months working in one particular typesetting shop. I want to say a couple things about it before I read it. I wanted to try to get at how I think when I’m working, so that’s a lot of what the piece is about: going in and out of how thoughts go in and out of my mind when my hands and mind are also involved in in work at the machine. Um, there’s one phrase in there where they’re calling me an electronic technician that I want to explain: I am a typesetter, and one particular union that I was trying to get in, um, had typesetters categorized as as people who are doing a certain kind of work and the boss, in order to keep me from getting into the union, simply called me another name. He called me an electronic technician, and um that’s somebody who fixes machines, and I don’t know how to do that.",
                                 "Um, a third thing about it is there’s a found poem in there, which is made from you take lines and you you splice them in later, and if you don’t  put something called a “quad left return” at the end of the line, it’ll spread out, and when I read the line long that’s what happened. Um, I want the poem in particular to be about the resistance of men and women, and particularly of women workers, on the job. I think too often we think of work as dreary and this and that but it’s it’s a tremendous source and place of resistance and humor. Lastly, there’s, this was written at the same time as Three Mile Island, so I really feel that it talks about what Meridel was speaking about, and um, and so there’s some dream material that works in there about radiation.",
                                 "It’s in about 11 parts, and it’s called “Woman Sitting at the Machine, Thinking.“"]
+        
         setTimeout(()=>{
             typeOutText("Karen Brodine",intro_name)
         },700)
-
         typeOutTextIntro(text_string_array,intro_container,j)
     }
 
